@@ -1,0 +1,12 @@
+
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        #myImage {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0;
+        }

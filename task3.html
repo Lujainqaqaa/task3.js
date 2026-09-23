@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Ordering System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Restaurant Ordering System</h1>
+
+        <!-- Customer Name -->
+        <label>Customer Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name">
+
+        <!-- Order -->
+        <label>Choose your order:</label>
+
+        <select id="order">
+            <option value="Burger">Burger</option>
+            <option value="Shawarma">Shawarma</option>
+            <option value="Zinger">Zinger</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button
+            id="submitBtn"
+            onclick="displayOrder()"
+            onmouseover="changeColor()"
+            onmouseout="returnColor()">
+            Submit Order
+        </button>
+
+        <!-- Result -->
+        <p id="result"></p>
+
+    </div>
+
+
+    <script src="task3.js"> </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--2-->

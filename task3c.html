@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Editor</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 550px;
+            height: 120px;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Font Type -->
+    <select id="fontType" onchange="changeStyle()">
+
+        <option value="Arial">Arial</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+
+    </select>
+
+
+    <!-- Font Size -->
+    <select id="fontSize" onchange="changeStyle()">
+
+        <option value="12px">12px</option>
+        <option value="15px" selected>15px</option>
+        <option value="20px">20px</option>
+        <option value="25px">25px</option>
+
+    </select>
+
+
+    <!-- Italic -->
+    <input 
+        type="checkbox" 
+        id="italic"
+        onchange="changeStyle()"
+    >
+    Italic
+
+
+    <!-- Bold -->
+    <input 
+        type="checkbox" 
+        id="bold"
+        onchange="changeStyle()"
+    >
+    Bold
+
+
+    <!-- Underline -->
+    <input 
+        type="checkbox" 
+        id="underline"
+        onchange="changeStyle()"
+    >
+    Underline
+
+
+    <br><br>
+
+
+    <!-- Text -->
+    <textarea id="text">Hello world</textarea>
+
+
+    <script src="task3c.js">
+
+       
+    </script>
+
+</body>
+
+</html>
